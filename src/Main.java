@@ -29,15 +29,19 @@ public class Main {
         List<Seller> sellersAll = sellerDao.findAll();
         sellersAll.forEach(System.out::println);
 
-//        System.out.println("\n === TEST 5: seller insert ====");
-//        Seller sellers2 = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, dep);
-//        sellerDao.insert(sellers2);
-//        System.out.println("Inserted! new id = "+sellers2.getId());
+        System.out.println("\n === TEST 5: seller insert ====");
+        Seller sellers2 = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, dep);
+        sellerDao.insert(sellers2);
+        System.out.println("Inserted! new id = "+sellers2.getId());
 
         System.out.println("\n === TEST 6: seller update ====");
         Seller sellers3 = sellerDao.findById(9);
         sellers3.setName("Martha waine");
         sellerDao.update(sellers3);
         System.out.println("Update completed");
+
+        System.out.println("\n === TEST 7: seller delete ====");
+        sellerDao.deleteById(17);
+        System.out.println("seller deleted");
     }
 }
