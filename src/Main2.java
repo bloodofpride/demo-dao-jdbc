@@ -25,5 +25,9 @@ public class Main2 {
         Department dep3 = new Department(6, "Festas");
         departmentDao.update(dep3);
         System.out.println("update complete ");
+
+        System.out.println("\n === TEST 5: department delete ====");
+        departmentDao.deleteById(6);
+        System.out.println("department deleted");
     }
 }
