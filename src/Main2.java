@@ -15,5 +15,10 @@ public class Main2 {
         System.out.println("\n === TEST 2: department findAll ====");
         List<Department> deps = departmentDao.findAll();
         deps.forEach(System.out::println);
+
+//        System.out.println("\n === TEST 3: department insert ====");
+//        Department dep2 = new Department(null, "casa e cia");
+//        departmentDao.insert(dep2);
+//        System.out.println("Inserted! new id = "+dep2.getId());
     }
 }
