@@ -20,5 +20,10 @@ public class Main2 {
 //        Department dep2 = new Department(null, "casa e cia");
 //        departmentDao.insert(dep2);
 //        System.out.println("Inserted! new id = "+dep2.getId());
+
+        System.out.println("\n === TEST 4: department update ====");
+        Department dep3 = new Department(6, "Festas");
+        departmentDao.update(dep3);
+        System.out.println("update complete ");
     }
 }
